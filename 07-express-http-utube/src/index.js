@@ -60,7 +60,9 @@ app.put('/clients/:id', (request, response) => {
         response.status(200).json(client);
     }
 })
-
+/**
+ * Deleta nome de clientes
+ */
 app.delete('/clients/:id', (request, response) => {
     const {id} = request.params;
     const index = clients.findIndex(value => value.id == id);
